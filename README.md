@@ -49,21 +49,30 @@ rag_files/
 
 Arquivos nessa pasta serão automaticamente vetorizados e utilizados nas respostas com IA.
 
+4. **Ajuste os prompts no `.env`:**
+
+Antes de subir os containers, personalize os seguintes prompts conforme o contexto da sua aplicação:
+
+- `AI_CONTEXTUALIZE_PROMPT` (prompt usado para gerar contexto com base nas mensagens do usuário)
+- `AI_SYSTEM_PROMPT` (prompt que define o comportamento e papel do assistente)
+
+Essas variáveis são fundamentais para que o chatbot responda de forma adequada ao seu caso de uso.
+
 ⚠️ Esta etapa deve ser feita **antes** de subir os containers.
 
-4. **Suba os containers com Docker Compose:**
+5. **Suba os containers com Docker Compose:**
 
 ```bash
 docker-compose up --build
 ```
 
-5. **Acesse o painel da EvolutionAPI:**
+6. **Acesse o painel da EvolutionAPI:**
 
 O painel da EvolutionAPI estará disponível em: [http://localhost:8080/manager](http://localhost:8080/manager)
 
 Utilize o painel para adicionar e gerenciar suas instâncias.
 
-6. **Conecte a instância do WhatsApp e configure o webhook:**
+7. **Conecte a instância do WhatsApp e configure o webhook:**
 
 Após conectar sua instância ao WhatsApp, acesse as configurações da instância no painel da EvolutionAPI e:
 
