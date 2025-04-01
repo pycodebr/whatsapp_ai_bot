@@ -2,4 +2,5 @@
 venv
 .venv
 vectorstore_data
-__py_cache__
+__pycache__/
+.DS_store
