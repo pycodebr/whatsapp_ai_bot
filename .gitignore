@@ -1,0 +1,5 @@
+.env
+venv
+.venv
+vectorstore_data
+__py_cache__
