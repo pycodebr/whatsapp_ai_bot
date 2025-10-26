@@ -1,5 +1,5 @@
-from langchain.chains import create_history_aware_retriever, create_retrieval_chain
-from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain_classic.chains import create_history_aware_retriever, create_retrieval_chain
+from langchain_classic.chains.combine_documents import create_stuff_documents_chain
 from langchain_core.runnables.history import RunnableWithMessageHistory
 from langchain_openai import ChatOpenAI
 
